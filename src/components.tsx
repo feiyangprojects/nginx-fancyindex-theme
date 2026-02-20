@@ -121,7 +121,7 @@ export function ListWithDialog({ data, query }: ListWithDialog) {
                   </div>
                 </a>
                 <button
-                  className="btn btn-square btn-ghost"
+                  className="btn btn-circle btn-ghost"
                   type="button"
                   onClick={() => {
                     setDialogIndexOfDataFiles(index);
