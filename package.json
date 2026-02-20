@@ -6,10 +6,17 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "split": "awk 'BEGIN{RS=\"|\";ORS=\"\";i=\"header\";} {print > \"dist/.fancyindex/\"i\".html\"; i=\"footer\"}' dist//index.html"
+
   },
   "dependencies": {
-    "preact": "^10.27.2"
+    "@preact/signals": "^2.8.1",
+    "@tailwindcss/vite": "^4.2.0",
+    "daisyui": "^5.5.18",
+    "lucide-preact": "^0.575.0",
+    "preact": "^10.27.2",
+    "tailwindcss": "^4.2.0"
   },
   "devDependencies": {
     "@preact/preset-vite": "^2.10.2",
