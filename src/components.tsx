@@ -86,10 +86,10 @@ export function Breadcrumb({ data }: Breadcrumb) {
   return (
     <div className="breadcrumbs p-4 text-sm">
       <ul>
+        <FolderTree className="inline min-h-6 min-w-6 pr-2" />
         {data.path.map((folder, index) => (
           <li>
             <a href={"../".repeat(data.path.length - index - 1)}>
-              <FolderTree className="inline" />
               <p className="opacity-60">{folder}</p>
             </a>
           </li>
